@@ -43,8 +43,8 @@ function App() {
     <div className="playlist-app">
       <h1>Once an Eagle, <br />Always an Eagle</h1>
       <h2>Super Fancy, Good Time Song Recommender</h2>
-      <p className="subtitle">Just select your current mood, and you'll get the perfect song for the moment.</p>
-     <p className="subtitle">Only Slappin' Bangers® will be recommended.</p>
+      <p className="subtitle">Just select your current mood, and you'll get the <strong>perfect</strong> song for the moment.</p>
+     <p className="subtitle">Only <strong>Slappin' Bangers®</strong> will be recommended.</p>
 
       <div className="mood-grid">
         {MOODS.map((mood) => (
