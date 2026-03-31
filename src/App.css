@@ -1,0 +1,84 @@
+.playlist-app {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.mood-btn {
+  padding: 12px 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.mood-btn:hover {
+  border-color: #888;
+}
+
+.mood-btn.selected {
+  border-color: #6c47ff;
+  background: #f0ecff;
+  color: #6c47ff;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease;
+}
+
+.recommendation {
+  border-top: 1px solid #eee;
+  padding-top: 24px;
+}
+
+.rec-label {
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.song-card {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px 32px;
+}
+
+.song-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.song-artist {
+  color: #666;
+  font-size: 0.95rem;
+}
